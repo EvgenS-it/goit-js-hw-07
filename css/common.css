@@ -79,9 +79,10 @@ p {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
   justify-content: center;
-  margin-top: 50px;
+  gap: 48px 24px;
+  max-width: 1128px;
+  margin: 50px auto;
 }
 
 .task2-list-item {
