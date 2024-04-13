@@ -13,8 +13,6 @@ body {
   line-height: 1.5;
 }
 
-/** =============== TASK - 1 ===============  */
-
 ul,
 ol {
   list-style: none;
@@ -22,16 +20,32 @@ ol {
   padding: 0;
 }
 
-h2 {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
+
+/** =============== TASK - 1 ===============  */
+
 .item {
-  border-radius: 8px;
-  padding: 16px;
   width: 392px;
   background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
   margin-bottom: 24px;
 }
+
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -40,6 +54,7 @@ h2 {
   color: #2e2f42;
   margin: 16px 0px 16px 0px;
 }
+
 .sub-list .sub-item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -58,3 +73,24 @@ h2 {
   border-bottom: 1px solid #808080;
   padding: 8px;
 }
+
+/** =============== TASK - 2 ===============  */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.task2-list-item {
+  max-width: 360px;
+}
+
+.task2-list-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/** =============== TASK - 3 ===============  */
