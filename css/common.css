@@ -150,6 +150,7 @@ p {
   border: 1px solid #808080;
 }
 
+#controls button,
 .change-color,
 .login-form button {
   color: #ffffff;
@@ -190,3 +191,62 @@ p {
 /* кнопка .change-color стилізована у завданні 4 */
 
 /** =============== TASK - 6 ===============  */
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+}
+
+#controls input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+}
+
+#controls button[data-create] {
+  background-color: #4e75ff;
+  border: 1px solid #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6c8cff;
+  border: 1px solid #6c8cff;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+  border-color: #ff4e4e;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+  border-color: #ff7070;
+}
