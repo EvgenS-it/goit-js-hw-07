@@ -150,6 +150,7 @@ p {
   border: 1px solid #808080;
 }
 
+.change-color,
 .login-form button {
   color: #ffffff;
   background-color: #4e75ff;
@@ -159,8 +160,29 @@ p {
   padding: 8px 16px;
 }
 
+.change-color:hover,
 .login-form button:hover {
   background-color: #6c8cff;
   border: 1px solid #6c8cff;
   cursor: pointer;
+}
+
+/** =============== TASK - 5 ===============  */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
