@@ -27,14 +27,35 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
-images.forEach(image => {
+const elements = images.map(image => {
   const listItem = document.createElement("li");
   listItem.classList.add("task2-list-item");
-  galleryList.append(listItem);
   
   const itemImage = document.createElement("img");
-  listItem.append(itemImage);
-  
   itemImage.src = image.url;
   itemImage.alt = image.alt;
+  listItem.append(itemImage);
+  return listItem;
 });
+
+galleryList.append(...elements);
+
+// Варіант вирішення з використанням .createDocumentFragment();
+// #region
+// const galleryList = document.querySelector(".gallery");
+// const fragment = document.createDocumentFragment(); // Create a document fragment to store the elements
+
+// images.forEach(image => {
+//     const listItem = document.createElement("li");
+//     listItem.classList.add("task2-list-item");
+
+//     const itemImage = document.createElement("img");
+//     itemImage.src = image.url;
+//     itemImage.alt = image.alt;
+
+//     listItem.appendChild(itemImage);
+//     fragment.appendChild(listItem); // Append the list item to the fragment
+// });
+
+// galleryList.appendChild(fragment); // Append the fragment containing all list items to the gallery at once
+// #endregion
